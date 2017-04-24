@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-	　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	　<title>To be honest,I'm don't know what it is</title>
-	</head>
-	<body>
-	
-	
-		我是李泽霖啊混蛋！那么帅你都认不出来吗！
-	　	话说我终于搭出来了啊
-	</body>
-	</html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <section id="about">
+        {% include about.html %}
+      </section>
+      <section id="projects">
+        {% include projects.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
+  </body>
