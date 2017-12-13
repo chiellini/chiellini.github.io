@@ -5,9 +5,8 @@ description: 博客博客博客就是日记网站
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Chieliini-lee  
-user_description: I'm a freshman and young software engineer.But I always believe and deeply hope I can change the world.Not only in finance,but also substainable energy and space exploiting technology.I want you! 
-user_title: Software Developer--Chieliini
+username: 李泽霖  
+user_description: 有一天，你会记住我的。
 email: 18319277690@163.com
 twitter_username: chiellini
 github_username:  chiellini
