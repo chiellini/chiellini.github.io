@@ -8,7 +8,7 @@ hidden: true
 tags:
   - 软件基础
   - 区块链
-  - blockchain
+  - Blockchain
   - Consensus Algorithm
   - 笔记
 ---
