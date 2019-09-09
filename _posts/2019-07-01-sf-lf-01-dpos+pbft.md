@@ -4,7 +4,7 @@ subtitle: "DPOS技术基础"
 layout: post
 author: "chiellini"
 header-style: text
-hidden: true
+catalog: true
 tags:
   - 软件基础
   - 区块链

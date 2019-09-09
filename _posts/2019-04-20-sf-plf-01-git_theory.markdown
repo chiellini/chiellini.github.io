@@ -4,7 +4,7 @@ subtitle: "useful git basic theary which can help you version control in termina
 layout: post
 author: "lizelin"
 header-style: text
-hidden: true
+catalog: true
 tags:
   - 软件基础
   - Version Control
