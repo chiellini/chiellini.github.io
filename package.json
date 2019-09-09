@@ -1,21 +1,25 @@
 {
-  "name": "particle",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nathan Randecker",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^2.0.0",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.0.0"
-  }
+    "name": "hux-blog",
+    "title": "Hux Blog",
+    "author": "Hux <huxpro@gmail.com>",
+    "version": "1.8.2",
+    "homepage": "http://huxpro.github.io",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Huxpro/huxpro.github.io"
+    },
+    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-contrib-less": "~0.11.4",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-banner": "~0.2.3",
+        "grunt-contrib-uglify": "~0.5.1"
+    },
+    "scripts": {
+        "start" : "jekyll serve -w -l --host 0.0.0.0 --port 4000",
+        "dev"   : "grunt watch & npm run start",
+        "boil"  : "git push boilerplate boilerplate:master",
+        "push"  : "git push origin master --tag"
+    }
 }

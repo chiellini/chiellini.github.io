@@ -1,0 +1,22 @@
+---
+layout:     post
+title:      "Hello 2018"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2018-01-29 12:00:00
+author:     "chiellini"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - 生活
+    - Meta
+---
+
+> “Yeah It's on. ”
+
+这是一个fork自黄玄的博客，纵欲有个能写问章的地方了。
+
+之前一直想自己设计一个前端，自己调jekyll的参数来使得blog更加好看，可惜一直都是在做后端，对前端理解不深，也没有时间去研究。最后也是说服自己看，用大神模板的就好了。
+
+Let's fight for brighter future!
+
+
