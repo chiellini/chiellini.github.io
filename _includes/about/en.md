@@ -1,43 +1,15 @@
 > Your time is limited, so don’t waste it living someone else’s life. 
 
-Hi, I am _@huxpro_ (Huang, Xuan), a will-be [Facebook](https://www.facebook.com/) software engineer and a professed UI/motion designer. My interests range from programming languages, compiler construction, web/app development, human computer interaction and developer infra. In the past, I worked on [Alitrip (Fliggy)](https://www.alitrip.com/) mobile/web at [Alibaba Group](https://en.wikipedia.org/wiki/Alibaba_Group), found and lead front-end infrastructure team at unicorn startup [Beijing Weiying (WePiao)](https://www.crunchbase.com/organization/beijing-weiying-technology), and helped [Ele.me](https://en.wikipedia.org/wiki/Ele.me) upgrading their mobile site into [the first influential progressive web app in China](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509). 
+I am Li Zelin. I major in electronic information and communication college of Huazhong University of Science and Technology. I also get second financial degree from economic college of HUST(Huazhong University of Science and Technology).
 
-I studied BA, Digital Media Art at [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) and MS, Computer Science at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology).
+My name is Li Zelin, an undergraduate in Huazhong University of Science and Technology. I am a thinker and always contemplate about making the best of every decision in all different situations. As a student of curiosity, I am interested in exploring the laws and rules about how things functions. With hard work and persistence in the past undergraduate years, I made some progress in both studying and personality improvement, especially the enhancement in self-learning ability. At the same time, Huazhong University of Science and Technology has also shaped my life values of being modest, responsible and indestructible.
 
-
-##### My Programming Languages Spectrum
-
-> __Left-right__ is how much I prefer it.  __Top-down__ is how much I know it. __Versions__ are lower bounds.  
-
-|     | 💔️           | ❤️ ️                 | ❤️❤️ ️                     | ❤️❤️❤️ ️               |
-| --- | ------------- | -------------------- | -------------------------- | ---------------------- |
-| 😅  | `PHP` `BASIC` | `C` `ObjC` `Prolog`  | `Kotlin` `Dart` `MIPS`     | `Swift` `Agda` `Idris` |
-| 🧐  |               | `C++` `Hack` `Lisp*` | `C++11` `C#` `AS3`         | `Scala` `Rust`         |
-| 😏  | `Shell`       | `Java` `Python`      | `TypeScript` `Flow` `Wasm` | `Haskell` `Coq` `ML*`  |
-| 🤓  |               | `JavaScript`         | `EcmaScript6`              | `λ` `Λ` `Π` `Σ`        |
-
-> __`ML*`__: `OCaml` `ReasonML` `Standard ML` (`F#`)  
-> __`Lisp*`__: `Clojure` `Scheme` `Racket`
-
-
-##### Talks
-
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
-
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+When I first entered HUST, I majored in School of Software Engineering. As the monitor in my class, I worked hard to unite the group and do my best to help other students in living and studying and am pleased that everything turns out fine. During freshman and sophomore years, my good grades earned me some scholarships and honors, such as National Encouragement Scholarship, Excellent League Member, Social Public Welfare Scholarship, etc.. At the same time, I actively participated in public welfare activities, with a total volunteering of 200+ hours. After my sophomore summer vacation, I joined the Electronic Information Engineering Experimental Class with 2+2 academic degree in the EIC(Electronic and Information College). Hence, I became a student of Electronic and Information College and left my original department.
+	
+During my sophomore summer vacation, I conducted an internship at Wuhan Pinssible Network Technology Co., Ltd., in which I use node.js to develop a set of background data monitoring system. This not only get me started in background development, also a deeper understanding of Linux and network protocols and great interests about it has had in my mind. At the same time, my coding ability and architecture designing ability have also increased rapidly. 
+	
+In junior year, I was a part of a blockchain project guided by Associate Professor Huang Jiaqing which led to the idea of me getting further education on distributed computing in the future. The project was built from nothing, from previous researches to prototype development, my team encountered a lot of difficulties, both theoretically and in terms of application. Still, with thorough discussion of our entire team, we have independently designed the architecture and solved these problems one by one. Now I am studying the consensus algorithm used by ALGORAND to address the unsafe factors of our blockchain which currently uses the DPOS+PBFT consensus algorithm.
+	
+It is during the study of diverse consensus algorithms that interests in blockchain technology and secure encryption technology starts to grow and I have begun to pay attention to this field. The current consensus algorithms are mainly POW, POS, DPOS and other improved algorithms based on them. In June 2019, the ALGORAND chain was released, which is built upon a pure proof-of-stake protocol proposed by Turing Award winner Silvio Mical et al. And my project is currently researching on how to apply this protocol on our own project. After studying the ALGORAND white paper, I am more confident and determined in doing consensus algorithms and blockchain researches. 
+	
+In the following months, I hope to improve our project of electoral mechanism of DPOS by combining the characteristics of ALGORAND since the current pure voting mechanism of DPOS has some problems like the voters’ non-voting issue and committee’s corruption. Therefore, if some features and encryption or ranking methods of ALGORAND can be applied in DPOS, our new chain can achieve higher TPS and more trusted security in specific application scenarios. 

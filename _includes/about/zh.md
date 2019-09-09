@@ -1,43 +1,18 @@
 > 离开世界之前，一切都是过程。
 
-Hi，我是黄玄，前端 Online NPC，编程语言/编译器初心者，广院认证的自由设计师，[Facebook](https://www.facebook.com/) 软件工程师。曾被招募为阿里巴巴 · [阿里旅行（飞猪）](http://alitrip.com)· 前端工程师、微影时代 · 微票儿 · 前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509) 等。
 
-目前的物理活动范围主要在美帝，分身日常出没于[博客](https://huangxuan.me)、[微博](https://weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](https://github.com/huxpro)、[Medium](https://medium.com/@Huxpro)。
+我是李泽霖。自诩是一个很随性很大大咧咧的人，所以也喜欢和不拘一格的人做朋友。
 
+虽然是程序员，但是对金融经济特别感兴趣。现在在努力学英语，申请香港的直接博士录取。希望未来可以从事用数据分析市场的人员，成立自己的公司，完成人生的小目标。
 
-##### 编程语言倾向表
+我是一个积极向上敢于探索的学生，并在过去的本科学习期间努力学习，不断进取。在大学几年时间中，我的自主学习能力得到了很大的提升，同时华中科技大学也塑造了我现在稳重、负责和一往无前的人生价值观。
 
-> __从左到右__ 为喜欢程度，__从上到下__ 为了解程度，__版本__ 表示下界。
+刚进入大学的时候，我录取学院是软件学院。我喜欢思考，喜欢结合自己的实际做出最有效率的选择。我在班级中担任班长，并努力团结集体，尽自己努力在学习生活上帮助其他同学，取得了不错的成效。在大一大二期间，我成绩比较优秀，获得了国家励志奖学金，自强奖学金，公益奖学金等等。同时我积极参加公益活动，总计工时200+。大二暑假经过深思熟虑，参加了电信学院学制为2+2的电子信息工程实验班，从此成为一名电信学子。
 
-|     | 💔️           | ❤️ ️                 | ❤️❤️ ️                     | ❤️❤️❤️ ️               |
-| --- | ------------- | -------------------- | -------------------------- | ---------------------- |
-| 😅  | `PHP` `BASIC` | `C` `ObjC` `Prolog`  | `Kotlin` `Dart` `MIPS`     | `Swift` `Agda` `Idris` |
-| 🧐  |               | `C++` `Hack` `Lisp*` | `C++11` `C#` `AS3`         | `Scala` `Rust`         |
-| 😏  | `Shell`       | `Java` `Python`      | `TypeScript` `Flow` `Wasm` | `Haskell` `Coq` `ML*`  |
-| 🤓  |               | `JavaScript`         | `EcmaScript6`              | `λ` `Λ` `Π` `Σ`        |
+大二暑假期间，我在武汉悦然心动网络科技有限公司实习，使用node.js开发后台的一套数据监控系统。这不仅使我入门了后台开发，也让我对linux和网络协议有了更加深刻的理解。与此同时，我的代码能力和架构设计能力也飞速提升。
 
-> __`ML*` 家族__：`OCaml` `ReasonML` `SML`  
-> __`Lisp*` 家族__：`Clojure` `Scheme` `Racket`
+在大三一年中，我参加了黄佳庆副教授的区块链项目开发中，并由此萌生了未来从事分布式计算方面研究的想法。该项目需要从底层搭建，从前期调研到原型开发阶段，都遇到了很多困难，包括理论上和实现上的。不过在我们整个团队的努力下，经过充分的讨论，我们自主设计架构，一一解决了这些问题。现在我正在研究algorand所使用的共识算法，从而改进现阶段的dpos+pbft共识算法中出块节点的腐败问题。
 
+正是在研究各类共识算法中，我对区块链技术和安全加密技术产生了兴趣，并开始关注这方面的研究。现阶段的共识算法主要是pow、pos、dpos和其他的改进算法。在2019年6月algorand链发布，这个链是基于图灵奖得主Silvio Mical等人提出的一个区块链协议。而我的项目目前正在研究如何应用此区块链协议。在经过研读Algorand白皮书之后，我对共识算法和区块链研究有了更深的兴趣。
 
-##### 演讲与分享
-
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
-
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+在接下来的学习和研究中，我希望能结合algorand的特性，改进dpos的选举机制。因为现阶段dpos的纯投票机制有很多问题，比如选民的不投票问题和委员会腐败问题。如果能把algorand的一些特性和方法在dpos中应用，使得新的应用链在特定的应用场景能达到高的tps和可信的安全性。

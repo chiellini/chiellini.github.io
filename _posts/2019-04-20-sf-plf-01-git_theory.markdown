@@ -1,6 +1,6 @@
 ---
 title: "Git 基础"
-subtitle: "useful git basic theary which can help you version control in terminal"
+subtitle: "useful git basic theory which can help you version control in terminal"
 layout: post
 author: "lizelin"
 header-style: text
@@ -10,8 +10,8 @@ tags:
   - Version Control
   - 笔记
 ---
-#Git 基础
-##1. Git 简史
+# Git 基础
+## 1. Git 简史
 同生活中的许多伟大事物一样，Git 诞生于一个极富纷争大举创新的年代。
 
 Linux 内核开源项目有着为数众广的参与者。 绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上（1991－2002年间）。 到 2002 年，整个项目组开始启用一个专有的分布式版本控制系统 BitKeeper 来管理和维护代码。
@@ -25,8 +25,8 @@ Linux 内核开源项目有着为数众广的参与者。 绝大多数的 Linux 
 有能力高效管理类似 Linux 内核一样的超大规模项目（速度和数据量）
 自诞生于 2005 年以来，Git 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。 它的速度飞快，极其适合管理大项目，有着令人难以置信的非线性分支管理系统。
 
-##2. 主要概念
-###2.1 仓库
+## 2. 主要概念
+### 2.1 仓库
 存放代码的目录，分为本地仓库和远程仓库，本地和远程可以通过 git remote add 建立关联。
 
 本地仓库有三大分区：
@@ -34,11 +34,11 @@ Linux 内核开源项目有着为数众广的参与者。 绝大多数的 Linux 
 **工作区 (Working Directory):** 是我们编辑代码的地方
 **暂存区 (Stage or Index):** 数据暂时存放的区域，可以在工作区和版本库之间进行数据的交流
 **版本库 (Commit History):** 存放已经提交的数据，push 的时候就是把这个区域的数据推送到远程仓库
-###2.2 分支
+### 2.2 分支
 git 中的分支本质上是一个指向某个 commit 的指针。
 
 
-###2.3 文件的生命周
+### 2.3 文件的生命周
 对于 git 仓库里的每一个文件（除了 .git 目录和被 .gitignore 忽略的文件），有如下几种状态：
 
 Untracked 未跟踪
@@ -48,7 +48,7 @@ Staged 暂存区
 
 ​
 
-##3. 常用操作
+## 3. 常用操作
 ```
 git init # 在当前目录下初始化一个本地 git 仓库
 git status # 检查当前文件状态
@@ -69,7 +69,7 @@ git remote add origin <repository> # 添加一个远程分支，命名为 origin
 git log [--oneline] # 查看 commit 信息
 git log --oneline --graph # 查看 commit 节点树
 ```
-##4. 高级操作
+## 4. 高级操作
 ```
 git branch # 查看本地分支
 git branch -a # 查看所有分支，包括远程分支
@@ -84,7 +84,7 @@ git stash # 将暂存区中的文件储藏起来
 git stash apply # 恢复储藏的文件到暂存区
 git revert <commit> # 撤销之前的某一个 commit
 ```
-##5. 冲突解决
+## 5. 冲突解决
 当发生冲突的时候，冲突的文件中会出现以下格式的内容。
 
 解决冲突的时候，可以选择保留当前修改，保留另一个分支的修改，或是两个都不保留，重新编辑。
@@ -97,7 +97,7 @@ git revert <commit> # 撤销之前的某一个 commit
             modification belongs to other branch
 >>>>>>> commit 38a1cab...
 ```
-##6. .gitignore
+## 6. .gitignore
 文件 .gitignore 的格式规范如下：
 
 所有空行或者以 ＃ 开头的行都会被 Git 忽略。
@@ -129,7 +129,7 @@ doc/*.txt
 # ignore all .pdf files in the doc/ directory
 doc/**/*.pdf
 ```
-##7. Merge & Rebase
+## 7. Merge & Rebase
 Merge: 合并两个分支
 
 Rebase: 改变分支的 base commit
@@ -182,5 +182,5 @@ rebase黄金准则
 
 永远不要 rebase 到一个共享的分支，只能 rebase 自己使用的私有分支。
 
-##8. License
+## 8. License
 本作品采用知识共享 署名-非商业性使用-相同方式共享 2.5 中国大陆 许可协议进行许可。要查看该许可协议，可访问 http://creativecommons.org/licenses/by-nc-sa/2.5/cn/ 或者写信到 Creative Commons, PO Box 1866, Mountain View, CA 94042, USA。
