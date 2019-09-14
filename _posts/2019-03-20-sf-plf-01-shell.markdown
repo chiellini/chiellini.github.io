@@ -1,0 +1,306 @@
+---
+title: "Shell 编程基础"
+subtitle: "useful shell script in linux and unix system"
+layout: post
+author: "lizelin"
+header-style: text
+catalog: true
+tags:
+  - 软件基础
+  - Linux
+  - Script
+  - Shell
+  - 笔记
+---
+# shell脚本笔记
+
+## 常用命令
+
+echo "string  ___"
+
+## 语法
+
+### 变量
+
+如下变量是正确的
+
+```shell
+RUNOOB
+LD_LIBRARY_PATH
+_var
+var2
+```
+
+用语句给变量赋值
+
+```shell
+for file in `ls /etc`
+#或
+for file in $(ls /etc)
+```
+
+使用变量和设置只读变量
+
+```shell
+echo ${your_variable_name}
+# 当你尝试改变它的时候会报错
+readonly myUrl
+# unset 删除变量
+unset variable_name
+```
+
+### 传递参数
+
+下面这几个参数是在运行shell脚本的时候传进来的参数
+
+```
+$ ./test.sh 1 2 3
+```
+
+```shell
+#!/bin/bash
+# author:菜鸟教程
+# url:www.runoob.com
+
+echo "Shell 传递参数实例！";
+echo "执行的文件名：$0";
+echo "第一个参数为：$1";
+echo "第二个参数为：$2";
+echo "第三个参数为：$3";
+```
+
+还有一些固有的传递参数
+
+| 参数处理 | 说明                                                         |
+| -------- | ------------------------------------------------------------ |
+| $#       | 传递到脚本的参数个数                                         |
+| $*       | 以一个单字符串显示所有向脚本传递的参数。 如"$*"用「"」括起来的情况、以"$1 $2 … $n"的形式输出所有参数。 |
+| $$       | 脚本运行的当前进程ID号                                       |
+| $!       | 后台运行的最后一个进程的ID号                                 |
+| $@       | 与$*相同，但是使用时加引号，并在引号中返回每个参数。 如"$@"用「"」括起来的情况、以"$1" "$2" … "$n" 的形式输出所有参数。 |
+| $-       | 显示Shell使用的当前选项，与[set命令](https://www.runoob.com/linux/linux-comm-set.html)功能相同。 |
+| $?       | 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。 |
+
+### shell数组
+
+```shell
+#定义
+my_array=(A B "C" D)
+#读取
+${array_name[index]}
+```
+
+获取数组元素的一些熟练用法
+
+```shell
+#!/bin/bash
+# author:菜鸟教程
+# url:www.runoob.com
+
+my_array[0]=A
+my_array[1]=B
+my_array[2]=C
+my_array[3]=D
+
+echo "数组的元素为: ${my_array[*]}"
+echo "数组的元素为: ${my_array[@]}"
+
+#结果
+#数组的元素为: A B C D
+#数组的元素为: A B C D
+```
+
+获取数组长度的做法
+
+```shell
+my_array[0]=A
+my_array[1]=B
+my_array[2]=C
+my_array[3]=D
+
+echo "数组元素个数为: ${#my_array[*]}"
+echo "数组元素个数为: ${#my_array[@]}"
+
+#结果如下
+#数组元素个数为: 4
+#数组元素个数为: 4
+```
+
+### 运算符
+
+- 算数运算符
+- 关系运算符
+- 布尔运算符
+- 字符串运算符
+- 文件测试运算符
+
+[要用的时候再看这个链接吧！！][https://www.runoob.com/linux/linux-shell-basic-operators.html]
+
+* 赋值
+
+  代码中的 [] 执行基本的算数运算，如：
+
+  ```shell
+  #!/bin/bash
+  
+  a=5
+  b=6
+  
+  result=$[a+b] # 注意等号两边不能有空格
+  echo "result 为： $result"
+  ```
+
+  
+
+## echo命令
+
+* 显示普通字符
+
+* 显示转义字符
+
+  ```shell
+  echo "\"It is a test\""
+  # "It is a test"
+  ```
+
+* 显示变量
+
+  read命令从标准输入中读取一行，并把输入行的每一个字段的值指定给shell变量
+
+  ```
+  #!/bin/sh
+  read name 
+  echo "$name It is a test"
+  ```
+
+* 显示变行
+
+  ```shell
+  echo -e "OK! \n" # -e 开启转义
+  echo "It is a test"
+  #结果
+  #OK!
+  #
+  #It is a test
+  ```
+
+* 显示不换行
+
+  ```shell
+  #!/bin/sh
+  echo -e "OK! \c" # -e 开启转义 \c 不换行
+  echo "It is a test"
+  
+  #结果
+  #OK! It is a test
+  ```
+
+* 显示结果定向到文件
+
+  ```shell
+  echo "It is a test" > myfile
+  ```
+
+* 原样输出字符串，不进行转义或取变量（用单引号）
+
+  ```shell
+  echo '$name\"'
+  ```
+
+* 显示命令执行结果
+
+  显示直接在shell脚本中
+
+  ```shell
+  echo `data`
+  ```
+
+## shell printf 命令
+
+[请看这个链接，暂时用不上就不自己写了][https://www.runoob.com/linux/linux-shell-printf.html]
+
+## shell test 命令
+
+用于检查某个条件是否成立，它可以进行数值，字符和文件三个方面的测试。
+
+| 参数 | 说明           |
+| ---- | -------------- |
+| -eq  | 等于则为真     |
+| -ne  | 不等于则为真   |
+| -gt  | 大于则为真     |
+| -ge  | 大于等于则为真 |
+| -lt  | 小于则为真     |
+| -le  | 小于等于则为真 |
+
+实例
+
+```shell
+num1=100
+num2=100
+if test $[num1] -eq $[num2]
+then
+	echo '两个数相等'
+else
+	echo '两个数不相等'
+fi
+```
+
+### 文件测试
+
+| 参数      | 说明                                     |
+| --------- | ---------------------------------------- |
+| -e 文件名 | 如果文件存在则为真。存在                 |
+| -r 文件名 | 如果文件存在且可读则为真。可读且存在     |
+| -w 文件名 | 如果文件存在且可写则为真。可写且存在     |
+| -x 文件名 | 如果文件存在且可执行则为真。可执行且存在 |
+| -s 文件名 | 如果文件存在且至少有一个字符则为真。     |
+| -d 文件名 | 如果文件存在且为目录则为真               |
+| -f 文件名 | 如果文件存在且为普通文件则为真           |
+| -c 文件名 | 如果文件存在且为字符型特殊文件则为真     |
+| -b 文件名 | 如果文件存在且为块特殊文件则为真         |
+
+```shell
+cd /bin
+if test -e ./bash
+then
+    echo '文件已存在!'
+else
+    echo '文件不存在!'
+fi
+```
+
+
+
+## shell 输入、输出重定向
+
+输入重定向，会把原来的内容覆盖
+
+```shell
+echo command1 > file1
+```
+
+ 重定向追加到文件末尾
+
+```shell
+echo "菜鸟教程：www.runoob.com" >> users
+```
+
+同样，也可以从文件中取得内容
+
+```shell
+#实例
+#接着以上实例，我们需要统计 users 文件的行数,执行以下命令：
+
+wc -l users
+   #    2 users
+#也可以将输入重定向到 users 文件：
+
+$  wc -l < users
+ #      2 
+#注意：上面两个例子的结果不同：第一个例子，会输出文件名；第二个不会，因为它仅仅知道从标准输入读取内容。
+
+#command1 < infile > outfile
+# 命令会从标准输入读取内容！
+```
+
+重定向的深入理解
