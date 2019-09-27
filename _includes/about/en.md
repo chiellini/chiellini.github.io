@@ -1,7 +1,5 @@
 > Your time is limited, so don’t waste it living someone else’s life. 
 
-I am Li Zelin. I major in electronic information and communication college of Huazhong University of Science and Technology. I also get second financial degree from economic college of HUST(Huazhong University of Science and Technology).
-
 My name is Li Zelin, an undergraduate in Huazhong University of Science and Technology. I am a thinker and always contemplate about making the best of every decision in all different situations. As a student of curiosity, I am interested in exploring the laws and rules about how things functions. With hard work and persistence in the past undergraduate years, I made some progress in both studying and personality improvement, especially the enhancement in self-learning ability. At the same time, Huazhong University of Science and Technology has also shaped my life values of being modest, responsible and indestructible.
 
 As a motivated student, I have the courage to explore the law of the operation of things. With studying hard in the past undergraduate period, I made great progress. During my several years in HUST, my self-learning ability has been greatly improved. Meanwhile, thoughts on the sprint stage of the college entrance examination let me know what I want in my life. I choose HUST as my college independently, which moulds my sedate, responsible and forward-thinking values of life. 
