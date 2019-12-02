@@ -234,13 +234,13 @@ we stop and get the lps[]:
 
 #### Understanding
 
-**The lps[] demonstrate the inner relationship of pattern. You can imagine that if the pattern is "ABCD" OR "BLOCKCHAIN" such different string, you can easily recognize it and move the pattern window along the txt; we use lps[] as [0,0,0,0,0…]. But if there are lots of similar characters, we can't know whether current characters match before in this window. For an instance, pat[] is AAAC and txt[] is AAAAAAAAAC; if we start matching from first character of pat[], we can never get O(n) time comlexity to get correct result. **
+**The lps[] demonstrate the inner relationship of pattern. You can imagine that if the pattern is "ABCD" OR "BLOCKCHAIN" such different string, you can easily recognize it and move the pattern window along the txt; we use lps[] as [0,0,0,0,0…]. But if there are lots of similar characters, we can't know whether current characters match before in this window. For an instance, pat[] is AAAC and txt[] is AAAAAAAAAC; if we start matching from first character of pat[], we can never get O(n) time comlexity to get correct result.**
 
 **KMP is  a Dynamic Programming algorithm because of its lps[], a DP array. And KMP use lps[] array to avoid lots of useless computation in Naive Algorithm, which is an important feature of Dynamic Programming.**
 
 **The most significant part of a successful Dynamic Programming is to find the State Transition Equation.**
 
-**The lps[] is designed to support the state transition. **
+**The lps[] is designed to support the state transition.**
 
 #### Test your program
 
