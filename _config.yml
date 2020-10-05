@@ -4,7 +4,7 @@ SEOTitle: 李先森的博客 | Chiellini Blog
 header-img: img/home-bg.jpg
 email: chiellini.lee@gmail.com
 description: "李泽霖 Software Engineer，Finatech, Algorithm | 这里是 @chiellini李泽霖 的个人博客，追求不一样的人生。"
-keyword: "李泽霖, chi李泽霖, chiellini, 赚钱, chiellini, @chiellini, 李泽霖的博客, Chiellini Blog, 博客, 个人网站, 互联网, Blockchain, FINANCIAL, FINATECH, 设计"
+keyword: "李泽霖, lizelin, chiellini, 赚钱, chiellini, @chiellini, 李泽霖的博客, Chiellini Blog, 博客, 个人网站, 互联网, Blockchain, FINANCIAL, FINATECH, 设计"
 url: "https://chiellini.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     三天之内_了你
-zhihu_username:     改变世界的李狗蛋
+zhihu_username:     li-sha-bi-97
 github_username:    chiellini
 twitter_username:   chiellini
 #facebook_username:  chiellini
