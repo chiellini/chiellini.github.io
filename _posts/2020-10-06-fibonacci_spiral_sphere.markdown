@@ -5,6 +5,7 @@ layout: post
 author: "zelin"
 header-style: text
 catalog: true
+mathjax: true
 tags:
   - thesis
   - 3D-shape
