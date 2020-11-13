@@ -48,7 +48,9 @@ a and b satisfy the following relationship:
 
 $$ \frac{a}{b}=\frac{a+b}{b}:=\varphi $$
 
-so we get the golden angle b which is approximately 2.399963... radians or 123.50776... degress. We generate it in our program via $$(3-\sqrt{5})*\pi$$.
+so we get the golden angle b which is approximately 2.399963... radians or 123.50776... degress. We generate it in our program via 
+$$ (3-\sqrt{5})*\pi $$
+
 
 # Fibonacci Spiral Circle
 
@@ -81,7 +83,7 @@ def fibonacci_spiral_disc(num_points, density_inverse=10):
 
 Like the fibonacci spiral circle, we want to find out a way to generate the points evenly on the sphere.
 
-If the spiral starts at a sphere’s pole then the radius and circumference of the spiral at any point is proportional to $cos(lat)$ for $lat$ in $\[-\pi/2,\pi/2\]$ and the continuous distribution function (CDF) of the turns proportional to $sin(lat)+1$.
+If the spiral starts at a sphere’s pole then the radius and circumference of the spiral at any point is proportional to $cos(lat)$ for $lat$ in $[-\pi/2,\pi/2]$ and the continuous distribution function (CDF) of the turns proportional to $sin(lat)+1$.
 
 With this CDF, the point index $i$ of a latitude can be calculated with $i = \frac{N+1}{2}(sin(lat)+1) $ for $N$ the total number of points required. Then we can get $lat = arcsin(i\frac{N+1}{2}-1)$ .
 
