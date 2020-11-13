@@ -28,13 +28,11 @@ tags:
 
 ## Golden Ratio
 
-Golden Ratio is an Irrational Number(meaning we cannot write it as a simple fraction), like $ \pi $ and $ e $. The golden ratio grows from fibonacci squence. We can derive it from this formula:
-
-$$ \varphi = \frac{1}{\varphi} $$
+Golden Ratio is an Irrational Number(meaning we cannot write it as a simple fraction), like $ \pi $ and $ e $. The golden ratio grows from fibonacci squence. We can derive it from this formula: $\varphi = \frac{1}{\varphi}$
 
 expanded formula:
 
-$$ \varphi = \frac{1}{\frac{1}{\frac{1}{...}}} $$
+$$\varphi = \frac{1}{\frac{1}{\frac{1}{...}}}$$
 
 To solve this equation, we can get $\varphi$ is 1.61803...
 
@@ -44,12 +42,13 @@ This the the golden angle looks like:
 
 ![golden_angle](https://github.com/chiellini/pictures_sources/blob/master/golden_angle.jpg?raw=true)
 
-a and b satisfy the following relationship:
-
-$$ \frac{a}{b}=\frac{a+b}{b}:=\varphi $$
+a and b satisfy the following relationship: $\frac{a}{b}=\frac{a+b}{b}:=\varphi$
 
 so we get the golden angle b which is approximately 2.399963... radians or 123.50776... degress. We generate it in our program via 
-$$ (3-\sqrt{5})*\pi $$
+
+$$
+(3-\sqrt{5})*\pi
+$$
 
 
 # Fibonacci Spiral Circle
