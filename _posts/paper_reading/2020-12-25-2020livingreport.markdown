@@ -1,0 +1,34 @@
+---
+title: "Setting the Clock for Fail-Safe Early Embryogenesis"
+subtitle: "Paper reading"
+layout: post
+author: "zelin"
+header-style: text
+catalog: true
+tags:
+  - Paper
+---
+
+# abstract
+
+* fail-safe(自动防故障的)
+* robust self-organization phenomenon
+* cell migration(迁移) trajectory（轨道）
+* mechanical cues
+* push cells into position where they experience the least repulsive forces
+* mechanically guided progress is properly timed
+* how : remained elusive(difficult to know)
+* cell volumes and division times are strongly anticorrelated 
+* somatic cells and precursor of germline are correlated
+* their experimental findings by a simple models
+  * model in conjunction with mechanical guidance can account for the fail-safe early embryogenesis of C.elegans.
+
+# introduction
+
+* C.ELEGANS are protected and eutely.
+* EUTELY : require egg shell robust and fail-safe, migrate to meaningful spatial positions.
+* migration is invarient.
+* explained:machanical model
+  * cells interact via repulsive protentials(势能)
+  * it predicted cells to relax towards positions of least repulsion after miosis(有丝分裂)
+* 
