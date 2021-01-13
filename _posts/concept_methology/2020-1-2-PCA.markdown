@@ -1,0 +1,18 @@
+---
+title: "PCA概念和API"
+subtitle: "PRINCIPAL COMPONENT ANALYSIS"
+layout: post
+author: "zelin"
+header-style: text
+catalog: true
+tags:
+  - Concept
+---
+
+# PCA
+
+用于降维。找到一个方向上，这个方向上all samples' variation最大，即该方向上所有数据点（observations)projection的方差最大。大的方差意味能表达更多的信息。
+
+## 定义
+
+
