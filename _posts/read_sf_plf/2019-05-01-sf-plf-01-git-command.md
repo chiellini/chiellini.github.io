@@ -10,6 +10,17 @@ tags:
   - Version Control
   - 笔记
 ---
+
+## 为什么你的 Git 仓库变得如此臃肿
+
+git因commit的记录太大导致push失败解决方法
+
+
+https://www.jianshu.com/p/7231b509c279
+
+https://stackoverflow.com/questions/32715034/removing-files-from-git-history-bad-revision-error
+
+
 **以下内容在git GUI都有，但是每次换一个环境要装ＧＵＩ也不现实，所以还是习惯用命令行吧**
 
 参考<https://www.git-scm.com/book/zh/v2>

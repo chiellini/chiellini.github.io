@@ -100,8 +100,8 @@ https://www.cnblogs.com/wodexk/p/10316793.html
   * df1.iloc[0,2]=25       iloc：用索引位置来查找
 
 * at 、iat只能更换单个值
-  * df1.at[0,'age']=25      # iat 用来取某个单值,只能用数字 as index
-  * df1.iat[0,2]=25         # at 用来取某个单值,只能用index和columns索引名称
+  * df1.iat[0,2]=25      # iat 用来取某个单值,只能用数字 as index
+  * df1.at[0,'age']=25         # at 用来取某个单值,只能用index和columns索引名称
 
 
 ### Moreover
