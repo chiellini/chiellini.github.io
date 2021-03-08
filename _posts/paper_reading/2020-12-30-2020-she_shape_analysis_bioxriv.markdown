@@ -14,6 +14,8 @@ REFERENCE:
 
 https://doi.org/10.1101/2020.12.08.415562
 
+https://1drv.ms/b/s!Ath3f5ykGji3mi8xidQEgV1zLX-W?e=FSwVfm
+
 # Abstract
 
 * benchmark 基準
@@ -54,21 +56,34 @@ https://doi.org/10.1101/2020.12.08.415562
 * nuclear pores
 * ...
 
-# Methomology
+# Methodology P33
+
+## registration
 * centroids 形心
 * preserving
   * the biologically relevant, apical-basal（以顶点为基准的） axis (顶点的那个z轴危中心)
   * the longest axis of the cell perpendicular(垂直的 ) to that axis
 
+## SHE -> SHAPE SPACE MAP P11 (RED PLACE） 
+
+* A method to "morph" all of the locations of all of the points within a cell into the idealized reconstructed cell shape the best represents the cell shape.
+
+
+## QUANTIFICATION AND STATISTICAL ANALYSIS P48
+
+## Building the cell and nuclear shape space P54
+**identifying the primary modes of shape variation**
+
+
+**I didn't understand the PCA usages, I can not get the real PCA for every cell. 24-2-2021 The following fucking mapping methods are derived by my self, but I cannot get the real inverse, the result SHcPCA are so weired.**
 * SHE + PCA 
   * you know what is PCA right?
   * PCA +- delta depend on the shape space map distribution
   * Probability density distribution of principal component values
   * see picture1 in experiment section
-* MAXIMUN POINT IN PCA ( SHAPE SPACE) TO DO CLUSTERING
 
 # Explanation
-* MAXIMUN POINT IN PCA ( SHAPE SPACE) TO DO CLUSTERING
+* MAXIMUM POINT IN PCA ( SHAPE SPACE) TO DO CLUSTERING
 
 # Experiment
 * correlation between original image and reconstruction image
@@ -83,6 +98,11 @@ https://doi.org/10.1101/2020.12.08.415562
 
 ## see suplementary materials(picture resources):
 https://www.biorxiv.org/content/10.1101/2020.12.08.415562v1.supplementary-material
+
+
+# ANALYSIS
+## PCA shape
+1. in this dataset, the total height of the cell is largely independent of its overall volume. (supported or to support 'Statistical Analysis of ')
 
 # conclusion
 * 
