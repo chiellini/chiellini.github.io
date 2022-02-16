@@ -14,6 +14,14 @@ tags:
 
 --update and report on each Monday!--
 
+## 9-6-2021 ~ 16-6-2021
+
+try mahalanobis distance
+https://zh.wikipedia.org/wiki/%E9%A9%AC%E5%93%88%E6%8B%89%E8%AF%BA%E6%AF%94%E6%96%AF%E8%B7%9D%E7%A6%BB
+actually, it is the euclidean distance in PCA space
+
+
+
 ## 9-3-2021 ~ 16-3-2021
 1. find out whether there is any problem in drawing function(draw all pls)
 2. use cube  multiple face object to evaluate my clustering method

@@ -113,7 +113,7 @@ git reset --hard origin
 使得ignore生效必须先清空git缓存器中具体命令如下
 
 危险命令！谨慎使用！
-* git rm -r --cached . -f  
+* git rm -r --cached . 
 
 * git add .
 * git commit -m "update .gitignore"
