@@ -6,9 +6,7 @@ author: "chiellini(lizelin)"
 header-style: text
 catalog: true
 tags:
-  - 软件基础
-  - Data Structure
-  - 笔记
+  - Programming
 
 ---
 

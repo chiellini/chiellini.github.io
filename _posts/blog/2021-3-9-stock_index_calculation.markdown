@@ -6,8 +6,8 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - blog
-  - stocks
+  - Blog/diary
+  - Stocks
 ---
 
 ## KDJ

@@ -6,7 +6,7 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - Paper
+  - Paper reading
 ---
 
 https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.117.188101#fulltext

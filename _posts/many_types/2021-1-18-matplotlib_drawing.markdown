@@ -7,7 +7,6 @@ header-style: text
 catalog: true
 tags:
   - Python
-  - 软件基础
   - Programming
 ---
 

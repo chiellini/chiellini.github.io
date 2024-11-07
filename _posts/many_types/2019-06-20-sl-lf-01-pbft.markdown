@@ -6,10 +6,10 @@ author: "chiellini"
 header-style: text
 catalog: true
 tags:
-  - 软件基础
-  - 区块链
+  - Programming
+  - Blockchain
   - Consensus Algorithm
-  - 笔记
+  - Blog/diary
 ---
 # PBFT共识算法
 实用的拜占庭容错算法

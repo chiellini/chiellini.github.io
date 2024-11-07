@@ -6,10 +6,8 @@ author: "lizelin"
 header-style: text
 hidden: true
 tags:
-  - 软件基础
-  - Python基础
-  - 依赖包管理
-  - 笔记
+  - Programming
+  - Blog/diary
 ---
 ### 本文主要介绍关于Python的虚拟环境virtualenv的使用以及如何进行项目迁移
 

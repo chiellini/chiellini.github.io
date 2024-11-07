@@ -6,9 +6,9 @@ author: "lizelin"
 header-style: text
 catalog: true
 tags:
-  - 软件基础
+  - Programming
   - Version Control
-  - 笔记
+  - Blog/diary
 ---
 # Git 基础
 ## 1. Git 简史

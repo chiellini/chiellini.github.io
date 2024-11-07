@@ -7,9 +7,8 @@ header-style: text
 catalog: true
 mathjax: true
 tags:
-  - thesis
-  - 3D-shape
-  - geometry
+  - Theorectical things
+  - 3D shape analyzing
 ---
 
 # Problem

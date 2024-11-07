@@ -6,7 +6,7 @@ author: "chiellini"
 header-style: text
 hidden: true
 tags:
-  - investment
+  - Digital coins
 ---
 
 * 一出場開50X，爆倉兩次共200CNY。

@@ -6,10 +6,10 @@ author: "lizelin"
 header-style: text
 hidden: true
 tags:
-  - 软件基础
+  - Programming
   - Javascript
   - Regular Expression
-  - 笔记
+  - Blog/diary
 ---
 # 正则表达式
 

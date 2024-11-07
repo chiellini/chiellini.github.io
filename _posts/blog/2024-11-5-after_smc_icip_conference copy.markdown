@@ -6,8 +6,7 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - blog
-  - diary
+  - Blog/diary
 ---
 
 # SMC 2024, Kuching, Malysia

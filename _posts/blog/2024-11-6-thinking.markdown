@@ -6,8 +6,7 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - blog
-  - diary
+  - Blog/diary
 ---
 
 # 無題

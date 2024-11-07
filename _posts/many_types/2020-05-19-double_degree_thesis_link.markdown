@@ -6,7 +6,8 @@ author: "chiellini"
 header-style: text
 catalog: true
 tags:
-  - thesis
+  - Milestone
+  - Blog/diary
 ---
 
 # 智慧医疗场景下区块链的架构设计

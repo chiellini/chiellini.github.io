@@ -6,7 +6,7 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - Paper
+  - Paper reading
 ---
 
 REFERENCE:

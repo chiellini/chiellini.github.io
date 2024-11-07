@@ -6,9 +6,8 @@ author: "lizelin"
 header-style: text
 hidden: true
 tags:
-  - 软件基础
-  - Version Control
-  - 笔记
+  - Programming
+  - Blog/diary
 ---
 
 ## 为什么你的 Git 仓库变得如此臃肿

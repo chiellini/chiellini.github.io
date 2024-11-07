@@ -6,10 +6,8 @@ author: "lizelin"
 header-style: text
 catalog: true
 tags:
-  - 软件基础
-  - Golang
   - Programming
-  - 笔记
+  - Blog/diary
 ---
 # go 的基本情况
 

@@ -6,7 +6,7 @@ author: "zelin"
 header-style: text
 catalog: true
 tags:
-  - Paper
+  - Paper reading
 ---
 
 file:///C:/Users/zelinli6/OneDrive/%E8%AE%BA%E6%96%87/MODELING%20THREE%E2%80%90DIMENSIONAL%20MORPHOLOGICAL%20STRUCTURES%20USING%20SPHERICAL%20HARMONICS.pdf
