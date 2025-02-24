@@ -4,7 +4,7 @@ subtitle: "2021 research planning"
 layout: post
 author: "zelin"
 header-style: text
-catalog: true
+hidden: true
 tags:
   - Blog/diary
 ---

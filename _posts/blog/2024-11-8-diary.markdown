@@ -5,9 +5,9 @@ layout: post
 author: "C.L. LEE"
 header-style: text
 catalog: true
-hidden: true
+# hidden: true
 tags:
-  - Diary
+  - Blog/diary
 ---
 
 

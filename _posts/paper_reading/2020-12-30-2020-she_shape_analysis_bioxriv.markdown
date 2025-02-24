@@ -4,7 +4,7 @@ subtitle: "Paper reading"
 layout: post
 author: "zelin"
 header-style: text
-catalog: true
+hidden: true
 tags:
   - Paper reading
 ---

@@ -4,7 +4,7 @@ subtitle: "Some algorithms for pattern searching"
 layout: post
 author: "chiellini(lizelin)"
 header-style: text
-catalog: true
+hidden: true
 tags:
   - Programming
 

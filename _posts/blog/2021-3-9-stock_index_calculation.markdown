@@ -4,7 +4,7 @@ subtitle: "calculation"
 layout: post
 author: "zelin"
 header-style: text
-catalog: true
+hidden: true
 tags:
   - Blog/diary
   - Stocks

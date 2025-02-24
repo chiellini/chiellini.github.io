@@ -7,6 +7,7 @@ header-style: text
 hidden: true
 tags:
   - Digital coins
+  - Blog/diary
 ---
 
 * 一出場開50X，爆倉兩次共200CNY。

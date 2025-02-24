@@ -4,7 +4,7 @@ subtitle: "Pandas基础使用，常用函数、操作与读写"
 layout: post
 author: "zelin"
 header-style: text
-catalog: true
+hidden: true
 tags:
   - Python
   - Programming
