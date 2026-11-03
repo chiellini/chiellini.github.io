@@ -99,13 +99,42 @@ header-img: "img/tag-bg.jpg"
             padding-left: 4px;
         }
         .cvpage ol.cv-pubs .pub-meta { color: #8a8a8a; }
+        .cvpage ol.cv-pubs .pub-links { white-space: nowrap; }
+        .cvpage ol.cv-pubs .pub-links a { font-weight: 600; }
         .cvpage ol.cv-pubs .me { color: #0085A1; }
+        .cvpage .cv-photo {
+            float: right;
+            width: 150px;
+            margin: 8px 0 12px 28px;
+            padding: 3px;
+            background: #fff;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+        }
+        .cvpage ul.cv-interests {
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .cvpage ul.cv-interests li {
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+        @media (max-width: 767px) {
+            .cvpage .cv-photo {
+                float: none;
+                display: block;
+                margin: 0 auto 18px auto;
+                width: 140px;
+            }
+        }
         @media print {
             .cvpage .cv-btn { display: none; }
+            .cvpage .cv-photo { width: 110px; }
         }
     </style>
 
     <!-- ============ Name & Contact ============ -->
+    <img class="cv-photo" src="{{ site.baseurl }}/img/zelin-li-photo.jpg" alt="Photo of Zelin Li">
     <h1 class="cv-name">Zelin Li&nbsp;&nbsp;<span class="cn">李泽霖</span></h1>
     <div class="cv-role">Postdoctoral Researcher, SIGS, Tsinghua University <span class="dot">&middot;</span> Ph.D. in Electrical Engineering (CityU HK, 2026)</div>
     <div class="cv-contact">
@@ -119,7 +148,7 @@ header-img: "img/tag-bg.jpg"
         <span class="sep">|</span>
         WeChat: 18319277690
     </div>
-    <a class="cv-btn" href="{{ site.baseurl }}/PDF_FILE/ZelinLi_CV.pdf" target="_blank">&#8681;&nbsp; Download full CV (PDF)</a><a class="cv-btn cv-btn-outline" href="https://scholar.google.com/citations?user=atCgiosAAAAJ&amp;hl=en" target="_blank">Google Scholar&nbsp;&#8599;</a>
+    <a class="cv-btn" href="{{ site.baseurl }}/PDF_FILE/ZelinLi_CV.pdf" target="_blank">&#8681;&nbsp; Download full CV (PDF)</a><a class="cv-btn cv-btn-outline" href="https://scholar.google.com/citations?user=atCgiosAAAAJ&amp;hl=en" target="_blank">Google Scholar&nbsp;&#8599;</a><a class="cv-btn cv-btn-outline" href="https://github.com/chiellini" target="_blank">GitHub&nbsp;&#8599;</a>
     <div class="cv-stats">107 citations &middot; h-index 6 &middot; i10-index 4 (Google Scholar, as of Oct 2026)</div>
     <div class="cv-updated">Last updated: November 2026 &mdash; the publication list below is kept more complete than the PDF.</div>
 
@@ -133,6 +162,16 @@ header-img: "img/tag-bg.jpg"
         AI-native perception-networking chips, and of <strong>AI-Tender-Writer</strong>, a multi-agent LLM system for
         automated tender document generation.
     </p>
+
+    <!-- ============ Research Interests ============ -->
+    <h2>Research Interests</h2>
+    <ul class="cv-interests">
+        <li>Computer vision and deep learning &mdash; cell segmentation, tracking, and lineage analysis in 3D/4D microscopic images</li>
+        <li>Computational biology &mdash; quantitative embryogenesis of <em>C.&nbsp;elegans</em>, live imaging, and molecular quantification</li>
+        <li>Generative models for microscopy &mdash; diffusion-based de-noising, super-resolution, and tensor completion</li>
+        <li>Vision-language-action models and embodied manipulation</li>
+        <li>Multi-agent LLM systems and AI-native perception-networking chips</li>
+    </ul>
 
     <!-- ============ Education ============ -->
     <h2>Education</h2>
@@ -204,31 +243,37 @@ header-img: "img/tag-bg.jpg"
             <strong>EmbSAM: Cell boundary localization and Segment Anything Model for fast images of developing embryos.</strong><br>
             Guoye Guan<sup>*</sup>, Cunmin Zhao<sup>*</sup>, <strong class="me">Zelin Li</strong><sup>*</sup>, Pei Zhang, Yixuan Chen, Pohao Ye, Ming-Kin Wong, Lu-Yan Chan, Hong Yan, Chao Tang, et al.<br>
             <em>Communications Biology</em> <span class="pub-meta">9, 8 (2026)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1038/s42003-025-09220-3" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Cell lineage-resolved embryonic morphological map reveals signaling associated with cell fate and size asymmetry.</strong><br>
             Guoye Guan<sup>*</sup>, <strong class="me">Zelin Li</strong><sup>*</sup>, Yiming Ma<sup>*</sup>, Pohao Ye<sup>*</sup>, Jianfeng Cao, Ming-Kin Wong, Vincy Wing Sze Ho, Lu-Yan Chan, Hong Yan<sup>#</sup>, Chao Tang<sup>#</sup>, et al.<br>
             <em>Nature Communications</em> <span class="pub-meta">16(1), 3700 (2025)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1038/s41467-025-58878-0" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>An effective method for quantification, visualization, and analysis of 3D cell shape during early embryogenesis.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Jianfeng Cao<sup>#</sup>, Guoye Guan, Zhongying Zhao, Hong Yan.<br>
             <em>Quantitative Biology</em> <span class="pub-meta">13(1), e83 (2025)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1002/qub2.83" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>A Fusion Model With Effective Multi-Scale Parallel Transformer for Cellular Segmentation.</strong><br>
             Zhaoke Huang<sup>#</sup>, <strong class="me">Zelin Li</strong>, Hong Yan.<br>
             <em>IEEE Transactions on Computational Biology and Bioinformatics</em> <span class="pub-meta">(2025)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1109/TCBBIO.2025.3542123" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>CShaperApp: Segmenting and analyzing cellular morphologies of the developing <em>Caenorhabditis elegans</em> embryo.</strong><br>
             Jianfeng Cao, <strong class="me">Zelin Li</strong>, Hong Yan.<br>
             <em>Quantitative Biology</em> <span class="pub-meta">12, 329 (2024)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1002/qub2.47" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Deep learning-based enhancement of fluorescence labeling for accurate cell lineage tracing during embryogenesis.</strong><br>
             <strong class="me">Zelin Li</strong><sup>*</sup>, Dongying Xie<sup>*</sup>, Yiming Ma<sup>*</sup>, Cunmin Zhao, Sicheng You, Hong Yan<sup>#</sup>, Zhongying Zhao.<br>
             <em>Bioinformatics</em> <span class="pub-meta">40(11), btae626 (2024)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1093/bioinformatics/btae626" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
     </ol>
 
@@ -248,16 +293,19 @@ header-img: "img/tag-bg.jpg"
             <strong>Volume Tells: Dual Cycle-Consistent Diffusion for 3D Fluorescence Microscopy De-noising and Super-Resolution.</strong><br>
             <strong class="me">Zelin Li</strong><sup>*</sup>, Chenwei Wang<sup>*</sup>, Zhaoke Huang<sup>#</sup>, Yiming Ma, Cunming Zhao, Zhongying Zhao, Hong Yan.<br>
             <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> <span class="pub-meta">pp. 16091–16100 (2025)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1109/CVPR52734.2025.01500" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Directional And Topological Transformer With Topology Priors For 4D Cellular Image Segmentation.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Zhen Zhu, Sicheng You, Zhongying Zhao, Hong Yan.<br>
             <em>IEEE International Conference on Image Processing (ICIP)</em> <span class="pub-meta">pp. 2902–2908 (2024)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1109/ICIP51287.2024.10648269" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>3D Cellular Segmentation of Live Embryos via Topologically and Biologically Boundary-aware Semi-supervised Learning.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Hong Yan.<br>
             <em>IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em> <span class="pub-meta">pp. 3312–3317 (2024)</span>
+            <span class="pub-links">&middot; <a href="https://doi.org/10.1109/SMC54092.2024.10831421" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
     </ol>
 
@@ -282,16 +330,19 @@ header-img: "img/tag-bg.jpg"
             <strong>Adaptive Safety Filtering for Frozen ACC Policies via Conformal Residual Calibration.</strong><br>
             Zhiruo Zhou<sup>*</sup>, <strong class="me">Rigaudiere Z. Li</strong><sup>*#</sup>, Xiwen Chen, Yucheng Chen, Xiaojun Zhu, Houde Liu.<br>
             <span class="pub-meta"><em>arXiv:2609.35415</em> (2026)</span>
+            <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2609.35415" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Frozen Flows Forget: Diagnosing and Restoring Lost Motion in a Latent-flow World Model.</strong><br>
             Xiwen Chen, <strong class="me">Rigaudiere Z. Li</strong>, Zhiruo Zhou, Xiaojun Zhu, Houde Liu.<br>
             <span class="pub-meta"><em>arXiv:2609.28414</em> (2026)</span>
+            <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2609.28414" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Dinomaly2: A Unified Framework for Unsupervised Image Anomaly Detection.</strong><br>
             Jia Guo, Shuai Lu, Lei Fan, <strong class="me">Zelin Li</strong>, Donglin Di, Yang Song, Weihang Zhang, Wenbing Zhu, Hong Yan, Fang Chen, Huiqi Li, Hongen Liao.<br>
             <span class="pub-meta"><em>arXiv:2510.17611</em> (2025), extended version of a CVPR 2025 paper</span>
+            <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2510.17611" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>A Method for Quantitative Analysis of Long-distance Cellular Communication in 3D Time-lapse in vivo Living Embryos.</strong><br>
