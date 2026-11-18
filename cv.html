@@ -80,6 +80,7 @@ header-img: "img/tag-bg.jpg"
             color: #999;
             margin: 40px 0 10px 0;
         }
+        .cvpage h2 + h3.cv-subsec { margin-top: 12px; }
         .cvpage .cv-pub-legend {
             font-size: 14px;
             color: #a3a3a3;
@@ -103,8 +104,71 @@ header-img: "img/tag-bg.jpg"
             line-height: 1.8;
             margin-bottom: 4px;
         }
+        /* --- quick-nav + section anchors (offset for fixed navbar) --- */
+        .cvpage h2[id] { scroll-margin-top: 70px; }
+        .cvpage .cv-quicknav {
+            margin: 12px 0 0 0;
+            font-size: 14px;
+        }
+        .cvpage .cv-quicknav a {
+            color: #0085A1;
+            text-decoration: none;
+            margin-right: 16px;
+            font-weight: 600;
+        }
+        .cvpage .cv-quicknav a:hover { text-decoration: underline; }
+        /* --- news timeline --- */
+        .cvpage ul.cv-news {
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 30px 0;
+        }
+        .cvpage ul.cv-news li {
+            position: relative;
+            padding-left: 96px;
+            margin-bottom: 9px;
+            line-height: 1.65;
+        }
+        .cvpage ul.cv-news .news-date {
+            position: absolute;
+            left: 0;
+            top: 1px;
+            color: #a3a3a3;
+            font-size: 13.5px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        /* --- venue badges: journal = teal outline, conference = teal solid, preprint = gray --- */
+        .cvpage .pub-venue {
+            display: inline-block;
+            padding: 1px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-right: 4px;
+            vertical-align: 1px;
+            white-space: nowrap;
+        }
+        .cvpage .pub-venue.j {
+            color: #0085A1;
+            border: 1px solid #0085A1;
+            background: #fff;
+        }
+        .cvpage .pub-venue.c {
+            color: #fff;
+            background: #0085A1;
+            border: 1px solid #0085A1;
+        }
+        .cvpage .pub-venue.p {
+            color: #8a8a8a;
+            border: 1px solid #ddd;
+            background: #fafafa;
+        }
         @media print {
             .cvpage .cv-btn { display: none; }
+            .cvpage .pub-venue.c { background: none; color: #0085A1; }
+            .cvpage .cv-quicknav { display: none; }
         }
     </style>
 
@@ -124,6 +188,9 @@ header-img: "img/tag-bg.jpg"
     <a class="cv-btn" href="{{ site.baseurl }}/PDF_FILE/ZelinLi_CV.pdf" target="_blank">&#8681;&nbsp; Download full CV (PDF)</a><a class="cv-btn cv-btn-outline" href="https://scholar.google.com/citations?user=atCgiosAAAAJ&amp;hl=en" target="_blank">Google Scholar&nbsp;&#8599;</a><a class="cv-btn cv-btn-outline" href="https://github.com/chiellini" target="_blank">GitHub&nbsp;&#8599;</a><a class="cv-btn cv-btn-outline" href="https://www.linkedin.com/in/zelin-li-b49742246" target="_blank">LinkedIn&nbsp;&#8599;</a>
     <div class="cv-stats">109 citations &middot; h-index 6 &middot; i10-index 4 (Google Scholar, as of Nov 2026)</div>
     <div class="cv-updated">Last updated: November 2026 &mdash; the publication list below is kept more complete than the PDF.</div>
+    <div class="cv-quicknav">
+        <a href="#news">News</a><a href="#projects">Projects</a><a href="#pubs">Publications</a><a href="#patents">Patents</a><a href="#honors">Honors</a><a href="#service">Service</a>
+    </div>
 
     <p>
         I work on computer vision and computational biology. I received my B.Eng. in EIE and B.S. in Finance
@@ -138,6 +205,19 @@ header-img: "img/tag-bg.jpg"
         image processing, VLA, WAM, and multi-agent V-LLM systems for specific areas. Building on my finance
         background, I also take a strong interest in quantitative trading and FinTech.
     </p>
+
+    <!-- ============ News ============ -->
+    <h2 id="news">News</h2>
+    <ul class="cv-news">
+        <li><span class="news-date">2026.10</span>Filed U.S. patent application 19/852,420 &mdash; 4D cellular morphology reconstruction, lineage tracing, and molecular quantification (first inventor).</li>
+        <li><span class="news-date">2026.04</span><em>Recover Cell Tensor</em> presented at ICLR 2026.</li>
+        <li><span class="news-date">2026</span>HKSTP Ideation Programme awardee (PIC).</li>
+        <li><span class="news-date">2026</span><em>MSTF-Net</em> accepted at CICAI 2026.</li>
+        <li><span class="news-date">2025</span><em>Volume Tells</em> published at CVPR 2025 (pp. 16091&ndash;16100).</li>
+        <li><span class="news-date">2025</span>HK Tech 300 Seed Fund awardee (CityUHK, 2025 cohort).</li>
+        <li><span class="news-date">2025</span>Cell lineage-resolved embryonic morphological map published in <em>Nature Communications</em> 16(1): 3700.</li>
+        <li><span class="news-date">2024.11</span>U.S. patent application US 2024/0395059 A1 published (morphological atlas of an embryo).</li>
+    </ul>
 
     <!-- ============ Research Interests ============ -->
     <h2>Research Interests</h2>
@@ -174,12 +254,12 @@ header-img: "img/tag-bg.jpg"
     <h2>Positions and Experience</h2>
 
     <div class="cv-row clearfix">
-        <span class="cv-date">2025 – Present</span>
-        <span class="cv-what">Principal Researcher</span>, SIGS, Tsinghua University, CN
+        <span class="cv-date">2026 – Present</span>
+        <span class="cv-what">Research Associate</span>, City University of Hong Kong, HK
     </div>
     <div class="cv-row clearfix">
-        <span class="cv-date">2025</span>
-        <span class="cv-what">Research Associate</span>, City University of Hong Kong, HK
+        <span class="cv-date">2025 – Present</span>
+        <span class="cv-what">Principal Researcher</span>, Tsinghua University, CN
     </div>
     <div class="cv-row clearfix">
         <span class="cv-date">2025</span>
@@ -189,18 +269,15 @@ header-img: "img/tag-bg.jpg"
         <span class="cv-date">2025 – Present</span>
         <span class="cv-what">Founder &amp; Person-in-Charge</span>, Guangzhou ISAC Artificial Intelligence Limited
         <span class="cv-note">
-            Start-up funded by the HK Tech 300 Seed Fund (CityUHK, 2025 cohort) and the HKSTP Ideation Programme.
-            Developing VLA, WAM, and multi-agent V-LLM systems for specific areas.
+            AI-native perception–networking chip platform startup &mdash; details under Projects below.
         </span>
     </div>
     <div class="cv-row clearfix">
         <span class="cv-date">2025 – Present</span>
         <span class="cv-what">Person-in-Charge</span>, AI-Tender-Writer, HK
         <span class="cv-note">
-            A multi-agent AI system integrating large language models, a domain knowledge graph with Graph-RAG retrieval,
-            and reinforcement learning from expert preference for regulation-compliant construction tender document
-            generation. Outcomes: U.S. patent application as first inventor (App. No. 19/422,549, with CN and HK family)
-            and conference papers under review.
+            Multi-agent AI system for regulation-compliant construction tender document generation
+            (U.S. patent application as first inventor) &mdash; details under Projects below.
         </span>
     </div>
     <div class="cv-row clearfix">
@@ -208,8 +285,84 @@ header-img: "img/tag-bg.jpg"
         <span class="cv-what">Blockchain Algorithm Developer (Intern)</span>, HUST Dian Group &amp; HK ASTRI, CN
     </div>
 
+    <!-- ============ Projects ============ -->
+    <h2 id="projects">Projects</h2>
+
+    <h3 class="cv-subsec">Entrepreneurial and Product Projects</h3>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2025 – Present</span>
+        <span class="cv-what">AI-Native Perception–Networking Chip Platform</span>
+        <span class="cv-note">
+            Founder and person-in-charge. Startup supported by the HK Tech 300 Seed Fund
+            (City University of Hong Kong, 2025 cohort) and the HKSTP Ideation Programme.<br>
+            Designing an AI-native system-on-chip that unifies computer vision and communication, with
+            hardware-level dynamic scheduling, ROI-aware perception processing, and perception-oriented
+            networking for autonomous vehicles, drones, and industrial robots.
+        </span>
+    </div>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2025 – Present</span>
+        <span class="cv-what">AI-Tender-Writer — Multi-agent Tender Document Generation</span>
+        <span class="cv-note">
+            Founder and person-in-charge. A multi-agent AI system integrating large language models, a domain knowledge
+            graph with Graph-RAG retrieval, and reinforcement learning from expert preferences, for
+            regulation-compliant construction tender document generation.<br>
+            Outcomes: U.S. patent application as first inventor (App. No. 19/422,549, with CN and HK family);
+            conference papers under review.
+        </span>
+    </div>
+
+    <h3 class="cv-subsec">Research Projects</h3>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2026 – Present</span>
+        <span class="cv-what">Grounding &amp; Efficient Reasoning for VLA Manipulation</span>
+        <span class="cv-note">
+            Two complementary interfaces for vision-language-action manipulation: typed spatial grounding
+            that turns language requests into explicit, machine-checkable pointing commands, and
+            prompt-authority control that engages the slow deliberative path only when needed.
+            Role: corresponding author on both papers, submitted to AAAI 2027.<br>
+            Outputs: <a href="https://arxiv.org/abs/2608.23138" target="_blank">Pointing-VLA (arXiv:2608.23138)&nbsp;&#8599;</a>
+            &middot; <a href="https://arxiv.org/abs/2608.23224" target="_blank">Think Only When Needed (arXiv:2608.23224)&nbsp;&#8599;</a>
+        </span>
+    </div>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2026</span>
+        <span class="cv-what">Latent-Flow World Models (WAM) for Manipulation</span>
+        <span class="cv-note">
+            Diagnosing why latent-flow world models progressively forget motion as training proceeds,
+            and restoring the lost motion so world-model rollouts stay dynamically faithful.<br>
+            Output: <a href="https://arxiv.org/abs/2609.28414" target="_blank">Frozen Flows Forget (arXiv:2609.28414)&nbsp;&#8599;</a>
+        </span>
+    </div>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2026</span>
+        <span class="cv-what">Conformal Safety Filtering for Frozen Autonomous-Driving Policies</span>
+        <span class="cv-note">
+            Wrapping frozen adaptive-cruise-control policies with conformal residual calibration, adding a
+            safety filter with calibrated violation guarantees without retraining the policy.
+            Role: co-first and corresponding author.<br>
+            Output: <a href="https://arxiv.org/abs/2609.35415" target="_blank">Adaptive Safety Filtering for Frozen ACC Policies (arXiv:2609.35415)&nbsp;&#8599;</a>
+        </span>
+    </div>
+
+    <div class="cv-row clearfix">
+        <span class="cv-date">2020 – 2026</span>
+        <span class="cv-what">4D <em>C. elegans</em> Microscopy Analysis</span>
+        <span class="cv-note">
+            Ph.D. research programme. Deep-learning pipelines for 3D/4D segmentation, cell tracking,
+            lineage reconstruction, and molecular quantification in living embryos.<br>
+            Outputs: peer-reviewed publications (<em>Nature Communications</em>, CVPR, ICLR), open research
+            software, and a U.S. patent application &mdash; see Publications and Patents below.
+        </span>
+    </div>
+
     <!-- ============ Publications ============ -->
-    <h2>Publications</h2>
+    <h2 id="pubs">Publications</h2>
     <div class="cv-pub-legend"><sup>*</sup> Equal contribution &nbsp;&nbsp; <sup>#</sup> Corresponding author &nbsp;&nbsp; Author names in <span style="color:#0085A1; font-weight:700;">teal</span> are mine.</div>
 
     <h3 class="cv-subsec">Journal Articles</h3>
@@ -217,37 +370,37 @@ header-img: "img/tag-bg.jpg"
         <li>
             <strong>EmbSAM: Cell boundary localization and Segment Anything Model for fast images of developing embryos.</strong><br>
             Guoye Guan<sup>*</sup>, Cunmin Zhao<sup>*</sup>, <strong class="me">Zelin Li</strong><sup>*</sup>, Pei Zhang, Yixuan Chen, Pohao Ye, Ming-Kin Wong, Lu-Yan Chan, Hong Yan, Chao Tang, et al.<br>
-            <em>Communications Biology</em> <span class="pub-meta">9, 8 (2026) &middot; 6 citations</span>
+            <span class="pub-venue j">Commun. Biol. 2026</span><em>Communications Biology</em> <span class="pub-meta">9, 8 (2026) &middot; 6 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1038/s42003-025-09220-3" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Cell lineage-resolved embryonic morphological map reveals signaling associated with cell fate and size asymmetry.</strong><br>
             Guoye Guan<sup>*</sup>, <strong class="me">Zelin Li</strong><sup>*</sup>, Yiming Ma<sup>*</sup>, Pohao Ye<sup>*</sup>, Jianfeng Cao, Ming-Kin Wong, Vincy Wing Sze Ho, Lu-Yan Chan, Hong Yan<sup>#</sup>, Chao Tang<sup>#</sup>, et al.<br>
-            <em>Nature Communications</em> <span class="pub-meta">16(1), 3700 (2025) &middot; 36 citations</span>
+            <span class="pub-venue j">Nat. Commun. 2025</span><em>Nature Communications</em> <span class="pub-meta">16(1), 3700 (2025) &middot; 36 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1038/s41467-025-58878-0" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>An effective method for quantification, visualization, and analysis of 3D cell shape during early embryogenesis.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Jianfeng Cao<sup>#</sup>, Guoye Guan, Zhongying Zhao, Hong Yan.<br>
-            <em>Quantitative Biology</em> <span class="pub-meta">13(1), e83 (2025) &middot; 5 citations</span>
+            <span class="pub-venue j">Quant. Biol. 2025</span><em>Quantitative Biology</em> <span class="pub-meta">13(1), e83 (2025) &middot; 5 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1002/qub2.83" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>A Fusion Model With Effective Multi-Scale Parallel Transformer for Cellular Segmentation.</strong><br>
             Zhaoke Huang<sup>#</sup>, <strong class="me">Zelin Li</strong>, Hong Yan.<br>
-            <em>IEEE Transactions on Computational Biology and Bioinformatics</em> <span class="pub-meta">22(2), 890–898 (2025) &middot; 3 citations</span>
+            <span class="pub-venue j">TCBB 2025</span><em>IEEE Transactions on Computational Biology and Bioinformatics</em> <span class="pub-meta">22(2), 890–898 (2025) &middot; 3 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1109/TCBBIO.2025.3542123" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>CShaperApp: Segmenting and analyzing cellular morphologies of the developing <em>Caenorhabditis elegans</em> embryo.</strong><br>
             Jianfeng Cao, <strong class="me">Zelin Li</strong>, Hong Yan.<br>
-            <em>Quantitative Biology</em> <span class="pub-meta">12, 329 (2024) &middot; 12 citations</span>
+            <span class="pub-venue j">Quant. Biol. 2024</span><em>Quantitative Biology</em> <span class="pub-meta">12, 329 (2024) &middot; 12 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1002/qub2.47" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Deep learning-based enhancement of fluorescence labeling for accurate cell lineage tracing during embryogenesis.</strong><br>
             <strong class="me">Zelin Li</strong><sup>*</sup>, Dongying Xie<sup>*</sup>, Yiming Ma<sup>*</sup>, Cunmin Zhao, Sicheng You, Hong Yan<sup>#</sup>, Zhongying Zhao.<br>
-            <em>Bioinformatics</em> <span class="pub-meta">40(11), btae626 (2024) &middot; 3 citations</span>
+            <span class="pub-venue j">Bioinformatics 2024</span><em>Bioinformatics</em> <span class="pub-meta">40(11), btae626 (2024) &middot; 3 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1093/bioinformatics/btae626" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
     </ol>
@@ -257,31 +410,31 @@ header-img: "img/tag-bg.jpg"
         <li>
             <strong>Recover Cell Tensor: Diffusion-Equivalent Tensor Completion for Fluorescence Microscopy Imaging.</strong><br>
             Chenwei Wang<sup>*</sup>, Zhaoke Huang<sup>*</sup>, <strong class="me">Zelin Li</strong><sup>#</sup>, Wenqi Zhu.<br>
-            <em>International Conference on Learning Representations (ICLR)</em> <span class="pub-meta">(2026) &middot; 1 citation</span>
+            <span class="pub-venue c">ICLR 2026</span><em>International Conference on Learning Representations (ICLR)</em> <span class="pub-meta">(2026) &middot; 1 citation</span>
             <span class="pub-links">&middot; <a href="https://iclr.cc/virtual/2026/poster/10010989" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>MSTF-Net: A UAV-Oriented Multi-Spectral Video Segmentation Method via Modality-Robust, Scale-Adaptive, and Consistent Fusion.</strong><br>
             Chenwei Wang, Zhida Wang, <strong class="me">Zelin Li</strong><sup>#</sup>, Elif Ozden-Yenigun, Houde Liu.<br>
-            <em>The CAAI International Conference on Artificial Intelligence (CICAI)</em> <span class="pub-meta">(2026)</span>
+            <span class="pub-venue c">CICAI 2026</span><em>The CAAI International Conference on Artificial Intelligence (CICAI)</em> <span class="pub-meta">(2026)</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2607.15628" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Volume Tells: Dual Cycle-Consistent Diffusion for 3D Fluorescence Microscopy De-noising and Super-Resolution.</strong><br>
             <strong class="me">Zelin Li</strong><sup>*</sup>, Chenwei Wang<sup>*</sup>, Zhaoke Huang<sup>#</sup>, Yiming Ma, Cunming Zhao, Zhongying Zhao, Hong Yan.<br>
-            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> <span class="pub-meta">pp. 16091–16100 (2025) &middot; 16 citations</span>
+            <span class="pub-venue c">CVPR 2025</span><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em> <span class="pub-meta">pp. 16091–16100 (2025) &middot; 16 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1109/CVPR52734.2025.01500" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Directional And Topological Transformer With Topology Priors For 4D Cellular Image Segmentation.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Zhen Zhu, Sicheng You, Zhongying Zhao, Hong Yan.<br>
-            <em>IEEE International Conference on Image Processing (ICIP)</em> <span class="pub-meta">pp. 2902–2908 (2024) &middot; 6 citations</span>
+            <span class="pub-venue c">ICIP 2024</span><em>IEEE International Conference on Image Processing (ICIP)</em> <span class="pub-meta">pp. 2902–2908 (2024) &middot; 6 citations</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1109/ICIP51287.2024.10648269" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>3D Cellular Segmentation of Live Embryos via Topologically and Biologically Boundary-aware Semi-supervised Learning.</strong><br>
             <strong class="me">Zelin Li</strong><sup>#</sup>, Zhaoke Huang, Hong Yan.<br>
-            <em>IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em> <span class="pub-meta">pp. 3312–3317 (2024) &middot; 1 citation</span>
+            <span class="pub-venue c">SMC 2024</span><em>IEEE International Conference on Systems, Man, and Cybernetics (SMC)</em> <span class="pub-meta">pp. 3312–3317 (2024) &middot; 1 citation</span>
             <span class="pub-links">&middot; <a href="https://doi.org/10.1109/SMC54092.2024.10831421" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
     </ol>
@@ -291,59 +444,59 @@ header-img: "img/tag-bg.jpg"
         <li>
             <strong>CTransformer: Deep-transformer-based 3D cell membrane tracking with subcellular-resolved molecular quantification.</strong><br>
             <strong class="me">Zelin Li</strong><sup>*</sup>, Guoye Guan<sup>*</sup>, Xiu Xian<sup>*</sup>, Dongying Xie, Yiming Ma, Sicheng You, Zhen Zhu, Darrick Lee, Zirui Zhang, Zhuoheng Ran, et al.<br>
-            <span class="pub-meta">Under review at <em>Nature Methods</em> (2026)</span>
+            <span class="pub-venue p">Under review</span><span class="pub-meta">Under review at <em>Nature Methods</em> (2026)</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2512.14472" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Pointing-VLA: Typed Spatial Grounding Interfaces for Vision-Language-Action Manipulation.</strong><br>
             Xiwen Chen, <strong class="me">Rigaudiere Z. Li</strong><sup>#</sup>, Zhiruo Zhou, Huiming Chen, Chenwei Wang, Xiaojun Zhu.<br>
-            <span class="pub-meta">Submitted to <em>AAAI 2027</em> &middot; <em>arXiv:2608.23138</em> (2026) &middot; 2 citations</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta">Submitted to <em>AAAI 2027</em> &middot; <em>arXiv:2608.23138</em> (2026) &middot; 2 citations</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2608.23138" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Think Only When Needed: Prompt-Authority Control for Selective Slow-Path Intervention in Vision-Language-Action Manipulation.</strong><br>
             Zhiruo Zhou, <strong class="me">Rigaudiere Z. Li</strong><sup>#</sup>, Xiwen Chen, Jiazhuo Li, Huiming Chen, Chenwei Wang, Xiaojun Zhu.<br>
-            <span class="pub-meta">Submitted to <em>AAAI 2027</em> &middot; <em>arXiv:2608.23224</em> (2026)</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta">Submitted to <em>AAAI 2027</em> &middot; <em>arXiv:2608.23224</em> (2026)</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2608.23224" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Adaptive Safety Filtering for Frozen ACC Policies via Conformal Residual Calibration.</strong><br>
             Zhiruo Zhou<sup>*</sup>, <strong class="me">Rigaudiere Z. Li</strong><sup>*#</sup>, Xiwen Chen, Yucheng Chen, Xiaojun Zhu, Houde Liu.<br>
-            <span class="pub-meta"><em>arXiv:2609.35415</em> (2026)</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta"><em>arXiv:2609.35415</em> (2026)</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2609.35415" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Frozen Flows Forget: Diagnosing and Restoring Lost Motion in a Latent-flow World Model.</strong><br>
             Xiwen Chen, <strong class="me">Rigaudiere Z. Li</strong>, Zhiruo Zhou, Xiaojun Zhu, Houde Liu.<br>
-            <span class="pub-meta"><em>arXiv:2609.28414</em> (2026)</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta"><em>arXiv:2609.28414</em> (2026)</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2609.28414" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>Dinomaly2: A Unified Framework for Unsupervised Image Anomaly Detection.</strong><br>
             Jia Guo, Shuai Lu, Lei Fan, <strong class="me">Zelin Li</strong>, Donglin Di, Yang Song, Weihang Zhang, Wenbing Zhu, Hong Yan, Fang Chen, Huiqi Li, Hongen Liao.<br>
-            <span class="pub-meta"><em>arXiv:2510.17611</em> (2025), extended version of a CVPR 2025 paper &middot; 15 citations</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta"><em>arXiv:2510.17611</em> (2025), extended version of a CVPR 2025 paper &middot; 15 citations</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2510.17611" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>A Method for Quantitative Analysis of Long-distance Cellular Communication in 3D Time-lapse in vivo Living Embryos.</strong><br>
             <strong class="me">Zelin Li</strong>, Zhongying Zhao, Hong Yan.<br>
-            <span class="pub-meta">Preprint (2023) &middot; 1 citation</span>
+            <span class="pub-venue p">Preprint</span><span class="pub-meta">Preprint (2023) &middot; 1 citation</span>
         </li>
         <li>
             <strong>CellINR: Implicitly Overcoming Photo-induced Artifacts in 4D Live Fluorescence Microscopy.</strong><br>
             Cunmin Zhao, Z. Luo, Guoye Guan, <strong class="me">Zelin Li</strong>, Yiming Ma, Zhongying Zhao, R. Wan.<br>
-            <span class="pub-meta"><em>arXiv:2508.19300</em> (2025) &middot; 1 citation</span>
+            <span class="pub-venue p">arXiv</span><span class="pub-meta"><em>arXiv:2508.19300</em> (2025) &middot; 1 citation</span>
             <span class="pub-links">&middot; <a href="https://arxiv.org/abs/2508.19300" target="_blank">Paper&nbsp;&#8599;</a></span>
         </li>
         <li>
             <strong>4D Cellular Morphology Atlas Construction Simultaneously Reveals Shape-adhesion Patterns During Embryogenesis.</strong><br>
             <strong class="me">Zelin Li</strong>, Guoye Guan, Zhongying Zhao, Hong Yan.<br>
-            <span class="pub-meta">Preprint (2024)</span>
+            <span class="pub-venue p">Preprint</span><span class="pub-meta">Preprint (2024)</span>
         </li>
     </ol>
 
     <!-- ============ Patents ============ -->
-    <h2>Patents</h2>
+    <h2 id="patents">Patents</h2>
 
     <div class="cv-row clearfix">
         <span class="cv-date">2026</span>
@@ -375,7 +528,7 @@ header-img: "img/tag-bg.jpg"
     </div>
 
     <!-- ============ Honors ============ -->
-    <h2>Honors and Academic Services</h2>
+    <h2 id="honors">Honors and Awards</h2>
 
     <div class="cv-row clearfix">
         <span class="cv-date">2026</span>
@@ -386,28 +539,37 @@ header-img: "img/tag-bg.jpg"
         HK Tech 300 Seed Fund Awardee (PIC, <a href="https://www.cityu.edu.hk/zh-cn/hktech300/start-ups/seed-fund-teams/hong-kong-multi-agentic-chips-design-cooperation">Hong Kong Multi-agentic Chips Design Cooperation</a>), City University of Hong Kong.
     </div>
     <div class="cv-row clearfix">
-        <span class="cv-date">2022 &amp; 2024</span>
-        Invited Trainer, EMBO Practical Course, European Molecular Biology Laboratory.
-    </div>
-    <div class="cv-row clearfix">
-        <span class="cv-date">2025 &amp; 2026</span>
-        Reviewer, AAAI Conference on Artificial Intelligence.
-    </div>
-    <div class="cv-row clearfix">
-        <span class="cv-date">2026</span>
-        Reviewer, International Conference on Learning Representations (ICLR), Annual Meeting of the Association for Computational Linguistics (ACL), and IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR).
-    </div>
-    <div class="cv-row clearfix">
-        <span class="cv-date">2026</span>
-        Reviewer, <em>Briefings in Bioinformatics</em>, <em>Cell Reports Methods</em>, <em>Computational and Structural Biotechnology Journal</em>, and <em>Scientific Reports</em>.
-    </div>
-    <div class="cv-row clearfix">
         <span class="cv-date">2020</span>
         Outstanding Graduate Honor, HUST. &nbsp; Outstanding Graduation Thesis Award, HUST.
     </div>
     <div class="cv-row clearfix">
         <span class="cv-date">2017</span>
         National Encouragement Scholarship, Ministry of Education, China.
+    </div>
+
+    <!-- ============ Academic Services ============ -->
+    <h2 id="service">Academic Services</h2>
+
+    <h3 class="cv-subsec">Reviewer &mdash; Conferences</h3>
+    <div class="cv-row clearfix">
+        <span class="cv-date">2026</span>
+        ICLR &middot; ACL &middot; CVPR
+    </div>
+    <div class="cv-row clearfix">
+        <span class="cv-date">2025 &amp; 2026</span>
+        AAAI Conference on Artificial Intelligence
+    </div>
+
+    <h3 class="cv-subsec">Reviewer &mdash; Journals</h3>
+    <div class="cv-row clearfix">
+        <span class="cv-date">2026</span>
+        <em>Briefings in Bioinformatics</em> &middot; <em>Cell Reports Methods</em> &middot; <em>Computational and Structural Biotechnology Journal</em> &middot; <em>Scientific Reports</em>
+    </div>
+
+    <h3 class="cv-subsec">Teaching and Training</h3>
+    <div class="cv-row clearfix">
+        <span class="cv-date">2022 &amp; 2024</span>
+        Invited Trainer, EMBO Practical Course, European Molecular Biology Laboratory.
     </div>
 
 </div>
